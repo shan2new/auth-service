@@ -16,6 +16,10 @@ SuperTokens.init({
   },
   recipeList: [
     EmailPassword.init(),
-    Session.init(),
+    Session.init({
+      cookieDomain: ".animetracker.xyz",  
+      cookieSameSite: "none",
+      cookieSecure: true,     
+    }),
   ],
 });

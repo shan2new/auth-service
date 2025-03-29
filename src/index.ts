@@ -6,6 +6,8 @@ import { middleware, errorHandler } from "supertokens-node/framework/express";
 import './supertokensConfig';
 import cookieParser from "cookie-parser";
 import { getSession } from "supertokens-node/recipe/session";
+import dotenv from "dotenv";
+dotenv.config();
 
 const app = express();
 
